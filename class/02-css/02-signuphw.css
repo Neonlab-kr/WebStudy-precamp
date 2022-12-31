@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 75vw;
+    border: 3px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.header{
+    width: 60vw;
+    color: #0068FF;
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.inputBox{
+    width: 60vw;
+    align-items: flex-start;
+    color: #797979;
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+.input{
+    width: 60vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+.input:focus{
+    outline: none;
+    border-bottom: 1px solid #0068FF;
+}
+
+.radio{
+    flex-direction: row;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.radioSelection{
+    appearance: none;
+    background-color: #ebebeb;
+    border: max(1px, 0.1em) solid #d2d2d2;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.check{
+    width: 60vw;
+    flex-direction: row;
+    max-width: 500px;
+}
+
+.hr{
+    width: 60vw;
+    height: 0.5px;
+    border: 0px;
+    background-color: #cfcfcf;
+    max-width: 500px;
+}
+
+.button{
+    width: 60vw;
+    height: 8vh;
+    border: 1px solid #0068FF;
+    border-radius: 10px;
+    color: #0068FF;
+    background: white;
+    max-width: 500px;
+}
