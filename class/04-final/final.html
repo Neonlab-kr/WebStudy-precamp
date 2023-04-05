@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="bound">
+        <div class="header">
+            <h2>코드캠프 회원가입</h2>
+        </div>
+        <br>
+        <div>
+            <input id="email" type="text" class="input" placeholder="이메일을 입력해 주세요">
+            <div id="noEmail" class="error" hidden> 이메일이 올바르지 않습니다.</div>
+            <div id="emailError" class="error" hidden> @가 포함되어야 합니다.</div>
+        </div>
+        <br>
+        <div>
+            <input id="name" type="text" class="input" placeholder="이름을 입력해 주세요">
+            <div id="noName" class="error" hidden> 이름이 올바르지 않습니다.</div>
+        </div>
+        <br>
+        <div>
+            <input id="password" type="password" class="input" placeholder="비밀번호를 입력해 주세요">
+            <div id="noPw" class="error" hidden> 비밀번호를 입력해 주세요</div>
+        </div>
+        <br>
+        <div>
+            <input id="passwordCheck" type="password" class="input" placeholder="비밀번호를 다시 입력해 주세요">
+            <div id="noPwCheck" class="error" hidden> 비밀번호를 입력해 주세요</div>
+            <div id="pwError" class="error" hidden> 비밀번호1과 비밀번호2가 동일해야합니다.</div>
+        </div>
+        <br>
+        <div class="phoneInfo">
+            <input type="text" id="p1" oninput="changeFocus1()" maxlength="3" class="phoneInput">-
+            <input type="text" id="p2" oninput="changeFocus2()" maxlength="4" class="phoneInput">-
+            <input type="text" id="p3" oninput="activateValidation()" maxlength="4" class="phoneInput">
+        </div>
+        <br>
+        <div class="validation">
+            <div id="target">000000</div>
+            <button id="sendValidationButton" onclick="auth()" class="sendValidation" disabled="true">인증번호 전송</button>
+        </div>
+        <br>
+        <div class="validation">
+            <div id="timer">3:00</div>
+            <button id="finish" onclick="authCheck()" class="checkValidation" disabled="true">인증확인</button>
+        </div>
+        <br>
+        <div>
+            <select id="regionSel" class="region__select">
+                <option selected="true" hidden>지역을 선택하세요</option>
+                <option>서울</option>
+                <option>인천</option>
+                <option>경기</option>
+            </select>
+            <div id="noRegion" class="error" hidden> 지역을 선택해 주세요</div>
+        </div>
+        <br>
+        <div class="radio">
+            <input id="female" type="radio" name="gender" class="radioSelection">여성&emsp;&emsp;
+            <input id="male" type="radio" name="gender" class="radioSelection">남성
+        </div>
+        <div id="noGender" class="error" hidden> 성별을 선택해 주세요</div>
+        <br>
+        <div>
+            <hr class="hr">
+        </div>
+        <br>
+        <div>
+            <button id="submitButton" onclick="submit()" class="button" disabled = true>가입하기</button>
+        </div>
+    </div>
+</body>
+</html>
