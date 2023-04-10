@@ -33,7 +33,7 @@ let auth = () => {
         const token = String(Math.floor(Math.random() * 1000000)).padStart(6,"0")
         document.getElementById("target").innerText = token
 
-        time = 180
+        time = 3
 
         timer = setInterval(function(){
             if(time>=0){
